@@ -1,0 +1,15 @@
+<!--the page after submmitting an input-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated Playlist</title>
+</head>
+<body>
+    <h1>Generated Playlist:</h1>
+    <ul>
+        {% for song in playlist %}
+        <li>{{ song }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

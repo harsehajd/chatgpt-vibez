@@ -1,0 +1,68 @@
+<!-- landing page -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- css styling! -->
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    h1 {
+        text-align: center;
+        color: #d58a8a;
+    }
+    
+    form {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #d58a8a;
+    }
+    
+    input[type="text"] {
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 300px;
+        box-sizing: border-box;
+    }
+    
+    input[type="submit"] {
+        padding: 8px 20px;
+        font-size: 16px;
+        background-color: #d58a8a;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #555;
+    }
+</style>
+
+    <title>Welcome to Vibez!</title>
+    <link rel="stylesheet" type="text/css" href="indexcss.html">
+</head>
+<body>
+    <h1>Welcome to Vibez!</h1>
+    <form action="/generate_playlist" method="POST">
+        <label for="vibe_description">Enter in a short phrase that describes the desired "vibe" for your playlist: </label>
+        <input type="text" name="vibe_description" id="vibe_description" required>
+        <input type="submit" value="Generate Vibez">
+    </form>
+</body>
+</html>
